@@ -1,0 +1,52 @@
+<% if @stories.present? %>
+  <% @stories.each do |story| %>
+    <div class="templatemo_post_section">
+      
+      <div class="date_section">
+        <%= story.created_at.to_time.strftime('%d') %><span><%= story.created_at.to_time.strftime('%b' )%></span>                   
+      </div>
+      
+      <div class="post_content">                  
+        <div class="post_title">
+          <h1><%=link_to story.title.to_s.titleize ,story_path(story) %></h1>
+          <div class="post_info">
+              Author by <%= link_to story.author , story_path(story) %> | <a href="#"><span class="comment"><%= "#{story.comments.count} comments" %></span></a>
+            </div>
+        </div>
+          
+        <div class="post_body">
+          <div class="owl-carousel">
+            <% if story.images.present? %>
+              <% story.images.each do|image| %>
+                <div class="item"><%= image_tag(image.image.url(:medium)) %></div>
+              <% end %>
+            <% else %>
+              <%= image_tag("images/templatemo_image_0#{rand(1..2)}.jpg") %>
+            <% end %>
+          </div>
+          <p><%= truncate strip_tags(story.content.to_s) , length: 200 %></p>
+        </div>
+      </div>
+
+    </div> <!-- end of 1 post -->
+    <div class="cleaner_with_height">&nbsp;</div>
+  <% end %>
+  <%= will_paginate @stories %>
+<% else %>
+  <p>Stories not found with your search keyword..!!</p>
+<% end %>
+<script type="text/javascript">
+$(document).ready(function() {
+     
+    $(".owl-carousel").owlCarousel({
+     
+    autoPlay: 3000, //Set AutoPlay to 3 seconds
+     
+    items : 1,
+    itemsDesktop : [1199,3],
+    itemsDesktopSmall : [979,3]
+     
+    });
+     
+});
+</script>

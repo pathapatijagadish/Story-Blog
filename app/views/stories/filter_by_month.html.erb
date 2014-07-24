@@ -1,0 +1,32 @@
+
+<% if @stories.present? %>
+  <% @stories.popular.limit(7).each do |story| %>
+    <div class="templatemo_post_section">
+      <div class="date_section">
+        <%= story.created_at.to_time.strftime('%d') %><span><%= story.created_at.to_time.strftime('%b' )%></span>                   
+      </div>
+      <div class="post_content">                  
+        <div class="post_title">
+          <h1><%=link_to story.title.to_s.titleize ,story_path(story) %></h1>
+          <div class="post_info">
+              Author by <%= link_to story.author , story_path(story) %> | <a href="#"><span class="comment">512 comments</span></a>
+            </div>
+        </div>
+          
+        <div class="post_body">
+          <img src="images/templatemo_image_01.jpg" alt="image" />
+          <% if story.images.present? %>
+            <%= image_tag(story.images.first.image.url(:medium)) %>
+          <% else %>
+            <%= image_tag("images/templatemo_image_0#{rand(1..2)}.jpg") %>
+          <% end %>
+          <p><%= truncate story.content.to_s.html_safe , length: 200 %></p>
+        </div>                    
+      </div>
+    </div> <!-- end of 1 post -->
+    <div class="cleaner_with_height">&nbsp;</div>
+  <% end %>
+  <%= will_paginate @stories %>
+<% else %>
+  <p>Stories not created yet.</p>
+<% end %>

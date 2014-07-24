@@ -1,0 +1,52 @@
+<div class="templatemo_content_left_section">
+  <div class="left_section_title">Categories</div>
+  <div class="left_section_content">
+  	<ul>
+      <% Category.includes(:stories).order(:name).each do |category| %>
+        <li><%= link_to "#{category.name} (<span>#{category.stories.count}</span>)".html_safe , category_path(category) %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>      
+            
+<div class="templatemo_content_left_section">
+ 	<div class="left_section_title">Archives</div>
+  <div class="left_section_content">    
+   	<ul>
+      <% Story.all.group_by{|x| x.created_at.month }.sort.each do |key,value| %>
+        <% if value.present? && key.present? %>
+          <li><%= link_to "#{value.flatten.first.created_at.strftime("%b")} (<span>#{value.flatten.count}</span>)".html_safe,month_stories_path(key) %></li>
+        <% end %>
+      <% end %>      
+    </ul>
+  </div>
+</div>
+    
+<div class="templatemo_content_left_section">
+	<div class="left_section_title">popular Stories</div>
+  <div class="left_section_content">
+  	<ul>
+        <% Story.popular.limit(7).each do |story| %>
+          <li><%= link_to story.title, story_path(story) %> written by <%= story.author %></li>
+        <% end %>
+    </ul>
+  </div>
+</div>
+    
+<div class="templatemo_content_left_section">
+  <div class="left_section_title">Gallery</div>
+  <div class="left_section_content">
+    <ul class="gallery">
+      <% Image.all.limit(6).each do |image| %>
+        <li><%= link_to (image_tag(image.image.url(:thumb)))  %></li>
+      <% end %>
+    </ul>
+    <div class="cleaner">&nbsp;</div><br />            
+    <%= link_to "View All",images_path %>
+  </div>
+</div>
+<style type="text/css">
+.left_section_content ul li span{
+  color: white;
+}
+</style>

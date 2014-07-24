@@ -1,0 +1,1317 @@
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+
+/*for the pagination adjustment 11/07/14*/
+/* line 4, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.pagination {
+  padding-left: 413px;
+  margin-top: 90px;
+}
+
+/*for the admin sign in design 18/07/14*/
+/* line 11, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.submit_btn input {
+  width: 57px;
+}
+
+/* line 15, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.admin_signin_form .leave_comment_section {
+  width: 385px;
+  margin-left: 75px;
+}
+/* line 18, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.admin_signin_form .leave_comment_section .submit_button {
+  width: 50px;
+}
+
+/* line 23, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.txt_field {
+  margin-left: 22px;
+}
+
+/*
+.remember {
+  margin-left: -29px;
+} */
+/*for delete and edit button design adjustment 19/07/14*/
+/* line 34, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.edit_delete_buttons_design {
+  float: right;
+  margin-right: 6px;
+}
+
+/* line 39, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+#owl-demo .item {
+  margin: 3px;
+}
+/* line 41, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+#owl-demo .item span {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 48, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+#error_explanation {
+  color: black;
+}
+
+/* line 52, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.categories_list {
+  margin-left: 50px;
+  padding: 20px;
+  background-color: #aba68b;
+  border: 1px solid #9e997e;
+}
+/* line 57, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.categories_list h2 {
+  color: #ded153;
+  height: 30px;
+  font-size: 30px;
+  border-bottom: 1px dotted #666;
+  margin-bottom: 15px;
+}
+/* line 64, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.categories_list table {
+  width: 100%;
+  font-size: 14px;
+  color: white;
+}
+/* line 68, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.categories_list table th {
+  color: #3c6285;
+  font-size: 16px;
+}
+
+/*Flash Messages*/
+/* line 77, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.flashmsgs {
+  padding: 5px;
+  width: 92%;
+  margin-left: 7%;
+}
+/* line 81, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.flashmsgs .message_notice {
+  color: green;
+  background-color: #9ef69e;
+  padding: 5px;
+  border-radius: 7px;
+}
+/* line 87, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.flashmsgs .message_alert {
+  color: orange;
+  background-color: #f3bded;
+  padding: 5px;
+  border-radius: 7px;
+}
+/* line 93, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.flashmsgs .message_error {
+  color: red;
+  background-color: #fcc4d1;
+  padding: 5px;
+  border-radius: 7px;
+  color: #DA553B;
+}
+/* line 99, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.flashmsgs .message_error span {
+  margin-bottom: 5px;
+  width: 100%;
+  display: block;
+  padding-left: 10px;
+  background-size: 24px 22px;
+}
+/* line 107, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.flashmsgs .closebtn {
+  float: right;
+  background: url(/assets/closeButton.png) 0 0 no-repeat;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 5px;
+  right: 5px;
+}
+/* line 115, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.flashmsgs .closebtn:hover {
+  background-image: url(/assets/closeButton.png) !important;
+}
+
+/* line 124, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.templatemo_post_section .post_body .owl-carousel .owl-controls {
+  margin-top: -30px;
+}
+
+/* line 133, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.loginfrm form input.submit_btn {
+  width: 80px;
+  color: #fff;
+  padding: 2px;
+  background: url(/assets/images/templatemo_left_column_title_bg.jpg) no-repeat -14px -5px;
+  background-size: 94px 35px;
+  border: 0px;
+  margin-left: 14px;
+}
+
+/* line 146, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.loginfrm form input.remember-box {
+  width: 15px;
+}
+
+/* line 152, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.loginfrm .leave_comment_section_title {
+  background: #696653;
+  padding-left: 10px !important;
+}
+
+/* line 158, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/manuall.css.scss */
+.loginfrm form {
+  background-color: #696653 !important;
+}
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+/* clearfix */
+/* line 9, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.carousel.css.scss */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+/* line 10, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.carousel.css.scss */
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+/* line 11, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.carousel.css.scss */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* line 27, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.carousel.css.scss */
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+/* line 31, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.carousel.css.scss */
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+/* line 39, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.carousel.css.scss */
+.owl-carousel .owl-item {
+  float: left;
+}
+
+/* display none until init */
+/* line 46, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.carousel.css.scss */
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* line 47, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.carousel.css.scss */
+.owl-controls .owl-page, .owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+
+/* mouse grab icon */
+/*
+.grabbing {
+  cursor: asset_url('grabbing.png') 8 8, move;
+} */
+/* fix */
+/* line 68, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.carousel.css.scss */
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+/* line 7, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.theme.css.scss */
+.owl-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+/* line 10, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.theme.css.scss */
+.owl-theme .owl-controls .owl-buttons div {
+  color: #FFF;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background: #869791;
+  filter: Alpha(Opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+}
+/* line 27, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.theme.css.scss */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+}
+/* line 33, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.theme.css.scss */
+.owl-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+}
+/* line 38, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.theme.css.scss */
+.owl-theme .owl-controls .owl-page span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: Alpha(Opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #869791;
+}
+/* line 51, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.theme.css.scss */
+.owl-theme .owl-controls .owl-page.active span {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+}
+/* line 57, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.theme.css.scss */
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+}
+/* line 62, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.theme.css.scss */
+.owl-theme .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* Styling Next and Prev buttons */
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+/* Styling Pagination*/
+/* If PaginationNumbers is true */
+/* preloading images */
+/* line 85, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.theme.css.scss */
+.owl-item.loading {
+  min-height: 150px;
+  background: url(/assets/AjaxLoader.gif) no-repeat center center;
+}
+/* 
+ *  Owl Carousel CSS3 Transitions 
+ *  v1.3.2
+ */
+/* line 7, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+.owl-origin {
+  -webkit-perspective: 1200px;
+  -webkit-perspective-origin-x: 50%;
+  -webkit-perspective-origin-y: 50%;
+  -moz-perspective: 1200px;
+  -moz-perspective-origin-x: 50%;
+  -moz-perspective-origin-y: 50%;
+  perspective: 1200px;
+}
+
+/* fade */
+/* line 19, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+.owl-fade-out {
+  z-index: 10;
+  -webkit-animation: fadeOut .7s both ease;
+  -moz-animation: fadeOut .7s both ease;
+  animation: fadeOut .7s both ease;
+}
+
+/* line 26, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+.owl-fade-in {
+  -webkit-animation: fadeIn .7s both ease;
+  -moz-animation: fadeIn .7s both ease;
+  animation: fadeIn .7s both ease;
+}
+
+/* backSlide */
+/* line 34, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+.owl-backSlide-out {
+  -webkit-animation: backSlideOut 1s both ease;
+  -moz-animation: backSlideOut 1s both ease;
+  animation: backSlideOut 1s both ease;
+}
+
+/* line 40, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+.owl-backSlide-in {
+  -webkit-animation: backSlideIn 1s both ease;
+  -moz-animation: backSlideIn 1s both ease;
+  animation: backSlideIn 1s both ease;
+}
+
+/* goDown */
+/* line 48, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+.owl-goDown-out {
+  -webkit-animation: scaleToFade .7s ease both;
+  -moz-animation: scaleToFade .7s ease both;
+  animation: scaleToFade .7s ease both;
+}
+
+/* line 54, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+.owl-goDown-in {
+  -webkit-animation: goDown .6s ease both;
+  -moz-animation: goDown .6s ease both;
+  animation: goDown .6s ease both;
+}
+
+/* scaleUp */
+/* line 62, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+.owl-fadeUp-in {
+  -webkit-animation: scaleUpFrom .5s ease both;
+  -moz-animation: scaleUpFrom .5s ease both;
+  animation: scaleUpFrom .5s ease both;
+}
+
+/* line 68, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+.owl-fadeUp-out {
+  -webkit-animation: scaleUpTo .5s ease both;
+  -moz-animation: scaleUpTo .5s ease both;
+  animation: scaleUpTo .5s ease both;
+}
+
+/* Keyframes */
+/*empty*/
+@-webkit-keyframes empty {
+  /* line 77, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  0% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes empty {
+  /* line 84, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  0% {
+    opacity: 1;
+  }
+}
+
+@keyframes empty {
+  /* line 91, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  0% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  /* line 98, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 101, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  /* line 108, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 111, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  /* line 118, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 121, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  /* line 128, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 131, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  /* line 138, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 141, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  /* line 148, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 151, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes backSlideOut {
+  /* line 158, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  25% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px);
+  }
+
+  /* line 162, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  75% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(-200%);
+  }
+
+  /* line 166, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  100% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(-200%);
+  }
+}
+
+@-moz-keyframes backSlideOut {
+  /* line 174, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  25% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px);
+  }
+
+  /* line 178, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  75% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px) translateX(-200%);
+  }
+
+  /* line 182, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  100% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px) translateX(-200%);
+  }
+}
+
+@keyframes backSlideOut {
+  /* line 190, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  25% {
+    opacity: .5;
+    transform: translateZ(-500px);
+  }
+
+  /* line 194, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  75% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(-200%);
+  }
+
+  /* line 198, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  100% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(-200%);
+  }
+}
+
+@-webkit-keyframes backSlideIn {
+  /* line 206, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  0%, 25% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(200%);
+  }
+
+  /* line 210, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  75% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px);
+  }
+
+  /* line 214, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0) translateX(0);
+  }
+}
+
+@-moz-keyframes backSlideIn {
+  /* line 222, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  0%, 25% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px) translateX(200%);
+  }
+
+  /* line 226, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  75% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px);
+  }
+
+  /* line 230, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateZ(0) translateX(0);
+  }
+}
+
+@keyframes backSlideIn {
+  /* line 238, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  0%, 25% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(200%);
+  }
+
+  /* line 242, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  75% {
+    opacity: .5;
+    transform: translateZ(-500px);
+  }
+
+  /* line 246, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  100% {
+    opacity: 1;
+    transform: translateZ(0) translateX(0);
+  }
+}
+
+@-webkit-keyframes scaleToFade {
+  /* line 254, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+  }
+}
+
+@-moz-keyframes scaleToFade {
+  /* line 262, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  to {
+    opacity: 0;
+    -moz-transform: scale(0.8);
+  }
+}
+
+@keyframes scaleToFade {
+  /* line 270, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+@-webkit-keyframes goDown {
+  /* line 278, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  from {
+    -webkit-transform: translateY(-100%);
+  }
+}
+
+@-moz-keyframes goDown {
+  /* line 285, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  from {
+    -moz-transform: translateY(-100%);
+  }
+}
+
+@keyframes goDown {
+  /* line 292, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  from {
+    transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes scaleUpFrom {
+  /* line 299, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+  }
+}
+
+@-moz-keyframes scaleUpFrom {
+  /* line 307, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  from {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+  }
+}
+
+@keyframes scaleUpFrom {
+  /* line 315, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  from {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+@-webkit-keyframes scaleUpTo {
+  /* line 323, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+  }
+}
+
+@-moz-keyframes scaleUpTo {
+  /* line 331, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  to {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+  }
+}
+
+@keyframes scaleUpTo {
+  /* line 339, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/owl.transitions.css.scss */
+  to {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+/* line 1, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+}
+
+/* line 33, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*
+
+*/
+/* line 6, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  background: #696653;
+}
+
+/* line 17, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+a:link, a:visited {
+  color: #f4d153;
+  text-decoration: none;
+}
+/* line 21, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+a:active, a:hover {
+  color: #f4d153;
+  text-decoration: underline;
+}
+
+/* line 27, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+h1 {
+  margin: 0px;
+  padding: 10px 0;
+  font-size: 26px;
+  color: #11616a;
+  font-weight: bold;
+}
+
+/* line 35, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.cleaner {
+  clear: both;
+  width: 100%;
+  height: 0px;
+}
+
+/* line 41, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.cleaner_with_height {
+  clear: both;
+  width: 100%;
+  height: 30px;
+}
+
+/* line 47, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.comment {
+  padding-left: 20px;
+  margin-left: 5px;
+  background: url(/assets/images/templatemo_comment_icon.png) bottom left no-repeat;
+}
+
+/* top panel */
+/* line 55, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_top_panel {
+  width: 100%;
+  height: 255px;
+  margin: 0 auto;
+  color: #000000;
+  background: #ffffff;
+}
+/* line 61, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_top_panel #templatemo_header_section {
+  width: 930px;
+  height: 255px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background: url(/assets/images/templatemo_header_bg.jpg) no-repeat;
+}
+
+/* line 70, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_header_section #search_box {
+  float: right;
+  margin-top: 205px;
+  width: 245px;
+  padding-left: 15px;
+  height: 30px;
+}
+
+/* line 79, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#search_box #search_field {
+  background: none;
+  border: none;
+  font-size: 13px;
+  font-variant: normal;
+  height: 18px;
+  line-height: normal;
+  padding: 4px;
+  width: 150px;
+}
+/* line 89, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#search_box #search_button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  height: 26px;
+  margin: 0 0 0 15px;
+  padding: 0 6px;
+  text-align: center;
+  vertical-align: bottom;
+  white-space: pre;
+  width: 50px;
+}
+
+/* end of top panel */
+/* menu */
+/* line 109, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_menu_panel {
+  clear: both;
+  width: 100%;
+  height: 48px;
+  margin: 0 auto;
+  color: #ffffff;
+  background: url(/assets/images/templatemo_menu_bg.jpg) repeat-x;
+}
+/* line 116, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_menu_panel #templatemo_menu_section {
+  width: 930px;
+  height: 48px;
+  margin: 0 auto;
+  padding: 0 0 0 30px;
+  color: #03a0a6;
+}
+
+/* line 126, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_menu_section ul {
+  float: left;
+  width: 930px;
+  margin: 0;
+  padding: 6px 0 0 0;
+  list-style: none;
+}
+/* line 132, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_menu_section ul li {
+  display: inline;
+}
+/* line 134, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_menu_section ul li .lastmenu {
+  border-right: none;
+}
+/* line 137, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_menu_section ul li a {
+  float: left;
+  width: 110px;
+  padding: 5px 0;
+  margin-right: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #2f2e27;
+  border-right: 1px solid #4c4a3c;
+}
+/* line 152, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_menu_section li a:hover, #templatemo_menu_section li .current {
+  color: #ffffff;
+}
+
+/* end of menu */
+/* content panel */
+/* line 162, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_content_panel {
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+  color: #ffffff;
+  background: url(/assets/images/templatemo_content_bg.jpg) repeat;
+}
+/* line 168, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_content_panel #templatemo_content {
+  clear: both;
+  overflow: hidden;
+  height: 100%;
+  width: 930px;
+  padding: 30px 0 0 30px;
+  margin: 0 auto;
+}
+
+/* line 179, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_content #templatemo_content_left {
+  float: left;
+  width: 270px;
+  margin-right: 30px;
+  padding-top: 15px;
+  border: 5px solid #7b7866;
+  background-color: #696653;
+}
+/* line 187, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_content #templatemo_content_right {
+  float: left;
+  width: 590px;
+}
+
+/* line 193, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_content_left .templatemo_content_left_section {
+  clear: both;
+  width: 260px;
+  margin-left: 10px;
+  margin-bottom: 25px;
+}
+
+/* line 201, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.templatemo_content_left_section .left_section_title {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 0 0 20px;
+  height: 45px;
+  background: url(/assets/images/templatemo_left_column_title_bg.jpg) no-repeat;
+}
+/* line 209, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.templatemo_content_left_section .left_section_content {
+  margin: 0px;
+  padding: 10px 20px 0 20px;
+}
+
+/* line 216, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.left_section_content ul {
+  clear: both;
+  margin: 0 0 0 15px;
+  padding: 0px;
+}
+/* line 220, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.left_section_content ul li {
+  margin: 0 0 5px 0;
+}
+/* line 224, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.left_section_content .gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 228, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.left_section_content .gallery li {
+  padding: 0;
+  float: left;
+  margin: 0 1px 1px 0;
+  width: 70px;
+  height: 61px;
+  border: 1px solid #7b7866;
+}
+/* line 236, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.left_section_content .gallery img {
+  border: none;
+}
+
+/* line 242, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_content_right .templatemo_post_section {
+  clear: both;
+  margin-bottom: 25px;
+}
+
+/* line 247, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.templatemo_post_section .date_section {
+  float: left;
+  display: inherit;
+  font-size: 30px;
+  font-weight: bold;
+  width: 70px;
+  height: 60px;
+  padding: 30px 0 0 30px;
+  margin-right: 15px;
+  background: url(/assets/images/templatemo_date_bg.png) no-repeat;
+}
+
+/* line 259, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.date_section span {
+  display: block;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* line 266, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.templatemo_post_section .post_content {
+  float: left;
+  display: inline;
+  width: 475px;
+}
+
+/* line 272, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.post_content .post_title {
+  width: 475px;
+  margin: 0 0 15px 0;
+  padding: 0 0 15px 0;
+  font-size: 26px;
+  font-weight: bold;
+  color: #d77707;
+  border-bottom: 1px solid #75715a;
+}
+
+/* line 282, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.post_title .post_info {
+  width: 100%;
+  font-weight: normal;
+  font-size: 12px;
+  padding-top: 5px;
+  color: #ffffff;
+}
+
+/* line 291, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.post_content .post_body {
+  padding: 0 0 15px 0;
+}
+/* line 293, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.post_content .post_body img {
+  margin-bottom: 15px;
+  border: 1px solid #7b7866;
+}
+/* line 298, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.post_content .post_comment {
+  padding-left: 20px;
+  margin-left: 5px;
+  background: url(/assets/images/templatemo_comment_icon.png) bottom left no-repeat;
+}
+
+/* comment */
+/* line 307, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#middle_column .comment_section {
+  margin: 20px 20px 30px 20px;
+}
+
+/* line 312, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.comment_section .comment_section_title {
+  color: #ded153;
+  height: 30px;
+  font-size: 30px;
+  border-bottom: 1px dotted #666;
+  padding: 20px 0 0 0;
+  margin-bottom: 15px;
+}
+/* line 320, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.comment_section .comment_box {
+  margin-bottom: 20px;
+  background: #bebaa4;
+}
+
+/* line 327, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.comment_box .comment_title {
+  color: #11616a;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: #aba68b;
+  border-bottom: 1px solid #9e997e;
+}
+/* line 334, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.comment_box .comment_body {
+  padding: 5px 10px;
+}
+
+/* line 339, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#middle_column .leave_comment_section {
+  margin: 20px;
+}
+
+/* line 344, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.leave_comment_section .leave_comment_section_title {
+  color: #ded153;
+  height: 30px;
+  font-size: 30px;
+  border-bottom: 1px dotted #666;
+  padding: 20px 0 0 0;
+  margin-bottom: 15px;
+}
+/* line 352, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.leave_comment_section form {
+  padding: 20px;
+  background-color: #aba68b;
+  border: 1px solid #9e997e;
+}
+/* line 357, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.leave_comment_section textarea {
+  background: #FFFFFF none repeat fixed 0 0;
+  border: 1px solid #BBBBBB;
+  display: block;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 1.1em;
+  height: 150px;
+  margin-top: 5px;
+  padding: 5px;
+  width: 300px;
+}
+/* line 368, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.leave_comment_section .form_row {
+  width: 100%;
+  margin-bottom: 15px;
+}
+/* line 372, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.leave_comment_section form input {
+  margin-top: 5px;
+  width: 200px;
+}
+/* line 376, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.leave_comment_section .submit_btn {
+  width: 80px;
+}
+
+/* end of comment */
+/* end of content */
+/* for bottom palen */
+/* line 386, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_bottom_panel {
+  width: 100%;
+  min-height: 280px;
+  margin: 0 auto;
+  border-top: 1px solid #050702;
+  background: black url(/assets/images/templatemo_bottom_panel_bg.jpg) center top no-repeat;
+}
+/* line 392, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_bottom_panel #templatemo_bottom_section {
+  overflow: hidden;
+  width: 930px;
+  margin: 0 auto;
+  padding: 40px 0 15px 30px;
+}
+
+/* line 401, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_bottom_section #templatemo_bottom_section_left {
+  float: left;
+  display: inline-block;
+  width: 280px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+/* line 408, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_bottom_section .bottom_section_title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* line 416, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_bottom_section_left .popular_post {
+  list-style: none;
+  margin: 0;
+  padding: 0 30px 0 0;
+}
+
+/* line 422, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+.popular_post li {
+  margin: 0 0 5px 0;
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid #36241b;
+}
+
+/* line 428, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_bottom_section #templatemo_bottom_section_right {
+  float: right;
+  text-align: right;
+  display: inline-block;
+  width: 280px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+/* line 437, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_bottom_section_right .list_section {
+  list-style: none;
+  margin: 0 0 15px 30px;
+  padding: 0;
+}
+/* line 441, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_bottom_section_right .list_section li {
+  list-style: none;
+}
+
+/* end of bottom panel */
+/*  footer */
+/* line 450, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_footer_panel {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #151513;
+  border-top: 1px solid #36352c;
+}
+/* line 456, /home/gowri/Desktop/Desktop/jagadish/storyblog/app/assets/stylesheets/templatemo_style.css.scss */
+#templatemo_footer_panel #templatemo_footer_section {
+  width: 960px;
+  height: 10px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+/* end of footer */
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+
+
+
+ */

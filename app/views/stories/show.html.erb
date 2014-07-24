@@ -1,0 +1,56 @@
+<% if @story.present? %>
+
+    <div class="templatemo_post_section">
+        <div class="date_section">
+            <%= @story.created_at.to_time.strftime('%d') %><span><%= @story.created_at.to_time.strftime('%b' )%></span>                   
+        </div>
+        <div class="post_content">                  
+            <div class="post_title">
+                <h1><%= @story.title.to_s.titleize %></h1> 
+                <div class="post_info">
+                    Author by <%= link_to @story.author , story_path(@story) %> | <a href="#"><span class="comment"><%= "#{@story.comments.count} comments" %></span></a>
+                    <% if current_user %>
+                    <div class="edit_delete_buttons_design">
+                        <%= link_to image_tag("edit.png",size: "20x20"),edit_story_path(@story) %>
+                        <%= link_to image_tag("delete.png",size: "17x17"),story_path(@story) ,      method: :delete, data: { confirm: 'Are you sure?' } %>
+                    </div>
+                    <% end %>
+                </div>
+            </div>
+                        
+            <div class="post_body">
+                <div class="owl-carousel">
+                    <% if @story.images.present? %>
+                      <% @story.images.each do|image| %>
+                        <div class="item"><%= image_tag(image.image.url(:medium)) %></div>
+                      <% end %>
+                    <% else %>
+                      <%= image_tag("images/templatemo_image_0#{rand(1..2)}.jpg") %>
+                    <% end %>
+                </div>
+                
+                <p><%= @story.content.to_s.html_safe %></p>
+            </div>  
+                        
+            <div id="comment_section">
+                <%= render partial: 'comments/story_comments' ,locals: {story: @story} %>
+            </div>                
+        </div>
+    </div> <!-- end of 1 post -->            
+    <div class="cleaner_with_height">&nbsp;</div>
+<% end %>
+<script type="text/javascript">
+$(document).ready(function() {
+     
+    $(".owl-carousel").owlCarousel({
+     
+    autoPlay: 3000, //Set AutoPlay to 3 seconds
+     
+    items : 1,
+    itemsDesktop : [1199,3],
+    itemsDesktopSmall : [979,3]
+     
+    });
+     
+});
+</script>

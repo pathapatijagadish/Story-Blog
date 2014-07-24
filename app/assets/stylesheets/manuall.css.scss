@@ -1,0 +1,160 @@
+/*for the pagination adjustment 11/07/14*/
+
+.pagination {
+  padding-left: 413px;
+  margin-top: 90px;
+}
+
+/*for the admin sign in design 18/07/14*/
+
+.submit_btn input {
+  width: 57px;
+}
+
+.admin_signin_form .leave_comment_section {
+  width: 385px;
+  margin-left: 75px;
+  .submit_button {
+    width: 50px;
+  }
+}
+
+.txt_field {
+  margin-left: 22px;
+}
+
+/*
+.remember {
+  margin-left: -29px;
+} */
+
+/*for delete and edit button design adjustment 19/07/14*/
+
+.edit_delete_buttons_design {
+  float: right;
+  margin-right: 6px;
+}
+
+#owl-demo .item {
+  margin: 3px;
+  span {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+#error_explanation {
+  color: black;
+}
+
+.categories_list {
+  margin-left: 50px;
+  padding: 20px;
+  background-color: #aba68b;
+  border: 1px solid #9e997e;
+  h2 {
+    color: #ded153;
+    height: 30px;
+    font-size: 30px;
+    border-bottom: 1px dotted #666;
+    margin-bottom: 15px;
+  }
+  table {
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    th {
+      color: rgb(60, 98, 133);
+      font-size: 16px;
+    }
+  }
+}
+
+/*Flash Messages*/
+
+.flashmsgs {
+  padding: 5px;
+  width: 92%;
+  margin-left: 7%;
+  .message_notice {
+    color: green;
+    background-color: rgb(158, 246, 158);
+    padding: 5px;
+    border-radius: 7px;
+  }
+  .message_alert {
+    color: orange;
+    background-color: rgb(243, 189, 237);
+    padding: 5px;
+    border-radius: 7px;
+  }
+  .message_error {
+    color: red;
+    background-color: rgb(252, 196, 209);
+    padding: 5px;
+    border-radius: 7px;
+    color: #DA553B;
+    span {
+      margin-bottom: 5px;
+      width: 100%;
+      display: block;
+      padding-left: 10px;
+      background-size: 24px 22px;
+    }
+  }
+  .closebtn {
+    float: right;
+    background: asset_url('closeButton.png') 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
+    right: 5px;
+    &:hover {
+      background-image: asset_url('closeButton.png') !important;
+    }
+  }
+}
+
+.templatemo_post_section {
+  .post_body {
+    .owl-carousel {
+      .owl-controls {
+        margin-top: -30px;
+      }
+    }
+  }
+}
+
+.loginfrm {
+  form {
+    input.submit_btn {
+      width: 80px;
+      color: #fff;
+      padding: 2px;
+      background: url(/assets/images/templatemo_left_column_title_bg.jpg) no-repeat -14px -5px;
+      background-size: 94px 35px;
+      border:0px;
+      margin-left:14px;
+    }
+  }
+}
+.loginfrm {
+  form {
+    input.remember-box {
+      width: 15px;
+    }
+  }
+}
+.loginfrm {
+  .leave_comment_section_title {
+    background: #696653;
+    padding-left:10px !important;
+  }
+}
+.loginfrm {
+  form {
+    background-color: #696653 !important;
+  }
+}

@@ -1,0 +1,31 @@
+<div class="categories_list">
+    <h2>Categories List</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Stories Count</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @categories.each do |category| %>
+      <tr>
+        <td><%= category.name %></td>        
+        <td align="center"  ><%= link_to category.stories.count ,category_path(category) %></td>
+        <td align="center">
+          <%= link_to image_tag("edit.png",size: "20x20"), edit_category_path(category) %>&nbsp;
+          <%= link_to image_tag("delete.png",size: "17x17"), category, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Category', new_category_path %>
+</div>
+</div>

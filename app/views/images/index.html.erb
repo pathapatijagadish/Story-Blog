@@ -1,0 +1,23 @@
+<% if @stories.present? %>
+<div class="templatemo_post_section">
+  <% @stories.each do |story| %>  
+    <div class="post_body" style="width:44%;float:left;margin:10px;padding:2px;border:2px solid #7b7866;height:230px;">
+      <div class="owl-carousel">
+        <% if story.images.present? %>
+          <% story.images.each do|image| %>
+            <div class="item"><%= image_tag(image.image.url(:medium)) %></div>
+          <% end %>
+        <% else %>
+          <%= image_tag("images/templatemo_image_0#{rand(1..2)}.jpg") %>
+        <% end %>
+      </div>
+      <div><%=story.title%></div>
+    </div>
+  <% end %>
+</div> <!-- end of 1 post -->
+<%#= will_paginate @stories %>
+    
+<div class="cleaner_with_height">&nbsp;</div>
+<% else %>
+<p>Gallery images not found..!!</p>
+<% end %>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Story Blog</title>  
+  <meta name="keywords" content="Short stories,kid stories,good stories,story blog" />
+  <meta name="description" content="Story Blog - free stories website to online read" />
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>  
+
+	<div id="templatemo_top_panel">
+		<div id="templatemo_header_section">
+    	<div id="search_box">
+        <%= form_tag root_path,method: :get do |f| %>        
+          <%= text_field_tag :keyword,params[:keyword],:id=>'search_field' %>
+          <%= submit_tag '',:id=> 'search_button' %>        
+        <% end %>
+      </div>
+    </div> 
+	</div>    
+    
+	<div id="templatemo_menu_panel">
+    <div id="templatemo_menu_section">
+      <ul>
+        <li><%= link_to "Home",root_path %></li>
+        <% if current_user %>  
+          <li><%= link_to "New Story", new_story_path%></li>
+          <li><%= link_to "New Category", new_category_path %></li>
+        <% end %>    
+        <li><%= link_to "Popular", popular_path %></li>
+        <li><%= link_to "Gallery" , images_path %> </li>
+        <li><%= link_to "About Us" ,about_us_path %></li>                     
+      </ul> 
+    </div>
+	</div> <!-- end of menu -->
+
+	<div id="templatemo_content_panel">
+		<div id="templatemo_content">
+    	<div id="templatemo_content_left">        
+        <%= render :partial => "shared/left_side_content" %>
+      </div> <!-- end of content left -->
+         
+      <div id="templatemo_content_right">
+        <% if flash.present? %>
+          <%flash.each do |type,message|%>
+            <div id="flash" class="flashmsgs">
+              <a href="javascript:;" onclick="hideFlshDiv()" class="closebtn"></a>
+              <div class="message_<%=type %>" style="z-index:1000px">
+                <%= message.titleize.gsub("<Br/>","<br/>").html_safe %>
+              </div>
+              <%flash.discard(type) %>
+            </div>
+          <%end%>        
+        <% end %>   
+        <%= yield %>
+      </div>
+        
+  		<div class="cleaner_with_height">&nbsp;</div>
+      </div>
+  </div> <!-- end of content panel -->
+
+  <div id="templatemo_bottom_panel">
+    <div id="templatemo_bottom_section">
+    
+    	<div id="templatemo_bottom_section_left">
+      	<div class="bottom_section_title">Latest Stories</div>
+      	<ul class="popular_post">	
+          <% Story.last(4).each do |story| %>
+            <li><%= link_to story.title,story_path(story) %><br /><%= story.author %> - <%= story.created_at.strftime("%b %d, %Y") %>
+              <% if story.comments.count >0 %>
+                <span class="comment"><%= story.comments.count %></span>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+        
+      <div id="templatemo_bottom_section_right">
+       	<div class="bottom_section_title">Friends
+        </div>
+        <!-- <ul class="list_section">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">Duis mollis</a></li>
+          <li><a href="#">Maecenas adipiscing</a></li>
+          <li><a href="#">Nunc blandit orci</a></li>
+          <li><a href="#">Cum sociis natoque</a></li>
+        </ul> -->
+        <p>It's a simple idea that has attracted millions of writers, readers, and artists to our platform.</p>        
+      </div>
+
+    </div>
+  </div> <!-- end of bottom panel -->
+
+  <div id="templatemo_footer_panel">
+    <div id="templatemo_footer_section">
+      Copyright © <%= Date.today.year %> <a href="/">Story Blog</a>
+    </div>
+  </div>
+  <script>
+    function hideFlshDiv() {
+      document.getElementById('flash').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>

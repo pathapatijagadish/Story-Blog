@@ -1,0 +1,28 @@
+<div class="admin_signin_form">
+  <div class="leave_comment_section loginfrm">
+    <div class="leave_comment_section_title">Admin Sign In</div>
+
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="form_row">
+        <%= f.label :email,:class => "leftlabel" %>
+        <%= f.email_field :email, autofocus: true,:class=>"txt_field" %>
+      </div>
+
+      <div class="form_row">
+        <%= f.label :password,:class => "leftlabel" %>
+        <%= f.password_field :password, autocomplete: "off"  %></div>
+
+      <div class="form_row" style="padding-left:60px;">
+      <% if devise_mapping.rememberable? -%>
+        <%= f.check_box :remember_me,:class => "remember-box" %> 
+        <%= f.label :remember_me ,:class=>"remember"%>
+        <%= f.submit "Sign in",:class=>"submit_btn" %>
+      <% end -%>
+      </div>
+
+      <div class="submit_btn"></div>
+    <% end %>
+
+    <%#= render "devise/shared/links" %>
+  </div>
+</div>

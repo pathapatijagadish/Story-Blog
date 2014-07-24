@@ -1,0 +1,54 @@
+<% if story.present? %>
+    <div class="comment_section">
+        <div class="comment_section_title">Comments </div>
+        <% if story.comments.count > 0 %>   
+            <% index = 0 %>
+            <% story.comments.each do |comment| %>
+                <div class="comment_box">
+                    <div class="comment_title"><%=  index+=1 %>. <%= comment.name %></div>
+                    <div class="comment_body">
+                        <%= comment.comment %>
+                    </div>
+                </div>
+            <% end %>        
+        <% else %>
+            <div class="comment_box">
+                <div class="comment_title"></div>
+                <div class="comment_body">
+                    Be your first comment ..!!!
+                </div>
+            </div>
+        <% end %>
+    </div>
+        
+    <div class="leave_comment_section">
+        <div class="leave_comment_section_title">Leave a comment</div>
+        <% if flash.present? %>
+          <%flash.each do |type,message|%>
+            <div id="flash" class="flashmsgs">
+              <a href="javascript:;" onclick="hideFlshDiv()" class="closebtn"></a>
+              <div class="message_<%=type %>" style="z-index:1000px">
+                <%= message.titleize.gsub("<Br/>","<br/>").html_safe %>
+              </div>
+              <%flash.discard(type) %>
+            </div>
+          <%end%>        
+        <% end %>
+        <%= form_for Comment.new,remote: true do |f| %>        
+            <%= f.hidden_field :story_id,value: story.id %>            
+            <div class="form_row">
+                <label>Your Name ( Required )</label><br />
+                <%= f.text_field :name, required: true %>                
+            </div>
+            <div class="form_row">
+                <label>Email  (Required, but not published)</label><br />                
+                <%= f.email_field :email, required: true %>
+            </div>
+          <div class="form_row">
+                <label>Your comment</label><br />                
+                <%= f.text_area :comment,cols: 30,rows: 6, required: true %>
+            </div>
+            <%= f.submit "Submit",class: "submit_btn" %>            
+        <% end %>              
+    </div>                 
+<% end %> 
